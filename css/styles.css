@@ -50,13 +50,13 @@ html {
     color: black;
 }
 
-section {
+/* section {
     padding-bottom: 10rem;
-}
+} */
 
 .home-container {
     background-color:blanchedalmond;
-    padding-bottom: 10rem;
+    /* padding-bottom: 10rem; */
     display: flex;
     justify-content: center;
 }
@@ -103,4 +103,29 @@ i {
     object-fit: cover;
     vertical-align: middle;
     opacity: 0.2;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(224, 179, 29);
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+}
+
+.about-details {
+    background-color: #ffebcd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 70%;
+    padding-bottom: 7rem;
+    /* padding-top: 2rem; */
+}
+
+.about-details img {
+    width: 50%;
+    border: .5rem solid black;
+    border-radius: 50%;
 }
