@@ -12,7 +12,7 @@ html {
 
 .navbar {
     background-color: rgb(224, 179, 29);
-    height: 100px;
+    height: 80px;
     align-items: center;
     /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); */
 }
@@ -20,7 +20,7 @@ html {
 .navbar-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 7rem;
     padding-right: 7rem;
     padding-top: 1.5rem;
@@ -32,13 +32,13 @@ html {
     gap: 2rem;
 }
 
-.navbar-name a {
+/* .navbar-name a {
     text-decoration: none;
     font-weight: 700;
     font-size: 2rem;
     color: black;
     letter-spacing: .1rem;
-}
+} */
 
 
 .navbar-btns {
@@ -52,9 +52,9 @@ html {
     color: black;
 }
 
-/* section {
-    padding-bottom: 10rem;
-} */
+section {
+    
+}
 
 .home-container {
     background-color:blanchedalmond;
@@ -64,7 +64,7 @@ html {
 }
 
 .home-left {
-    max-width: 50%;
+    max-width: 60%;
     display: flex;
     justify-content: center;
 }
@@ -103,7 +103,7 @@ i {
 }
 
 .home-right {
-    max-width: 100%;
+    max-width: 40%;
     background-color: rgb(224, 179, 29);
 }
 
@@ -111,7 +111,7 @@ i {
     max-width: 100%;
     object-fit: cover;
     vertical-align: middle;
-    opacity: 0.2;
+    opacity: 0.4;
 }
 
 .about-container {
@@ -123,7 +123,8 @@ i {
 }
 
 .about-details {
-    margin-top: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     background-color: #ffebcd;
     display: flex;
     flex-direction: column;
@@ -198,4 +199,42 @@ i {
 
 .read-more-button a:hover {
     color: rgb(54, 42, 3);
+}
+
+
+.services-container {
+    padding-top: 4rem;
+    display: flex;
+    background-color: blanchedalmond;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 9rem;
+}
+
+.services-grid {
+    padding-top: 2rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    display: grid;
+    width: 100%;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+.services-type {
+    padding: 1rem 1rem;
+    border: 2px solid rgb(221, 172, 10);
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.5rem rgb(104, 105, 105);
+}
+
+.services-type:hover {
+    background-color: rgb(221, 172, 10);
+    transition: 0.5s ease;
+}
+
+.services-type h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
