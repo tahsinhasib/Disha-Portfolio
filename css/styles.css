@@ -14,6 +14,7 @@ html {
     background-color: rgb(224, 179, 29);
     height: 100px;
     align-items: center;
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .navbar-container {
@@ -36,6 +37,7 @@ html {
     font-weight: 700;
     font-size: 2rem;
     color: black;
+    letter-spacing: .1rem;
 }
 
 
@@ -46,7 +48,7 @@ html {
 
 .navbar-btns a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: black;
 }
 
@@ -82,8 +84,15 @@ html {
     padding-top: 0.1rem;
 }
 
-p {
+.home-about p {
+    margin-top: 0.5rem;
     font-size: 1.1rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+span {
+    color: red;
 }
 
 i {
@@ -109,23 +118,84 @@ i {
     display: flex;
     justify-content: center;
     background-color: rgb(224, 179, 29);
-    padding-bottom: 5rem;
-    padding-top: 2rem;
+    /* padding-bottom: 5rem; */
+    /* padding-top: 2rem; */
 }
 
 .about-details {
+    margin-top: 2rem;
     background-color: #ffebcd;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    width: 70%;
+    width: 40%;
     padding-bottom: 7rem;
     /* padding-top: 2rem; */
+    border: .2rem solid rgb(224, 179, 29);
+    border-radius: 50%;
+}
+
+.about-details h1 {
+    margin-top: 2rem;
 }
 
 .about-details img {
-    width: 50%;
-    border: .5rem solid black;
+    margin-top: 2rem;
+    height: auto;
+    width: 30%;
+    border: .2rem solid rgb(224, 179, 29);
     border-radius: 50%;
+}
+
+.about-details p {
+    margin-top: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.read-more-button {
+    /*
+    margin-top: 2rem;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none; */
+
+    display: inline-flex;
+    margin-top: 2rem;
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    background-color: rgb(221, 172, 10);
+    border-radius: 4px;
+    box-shadow: 0 0.2rem 0.5rem rgb(104, 105, 105);
+    font-size: 1.6rem;
+    color: black;
+    /* letter-spacing: .1rem; */
+    font-weight: 700;
+    overflow: hidden;
+    border-radius: 2rem;
+    border: 0.2rem solid transparent;
+    transition: .5s ease;
+}
+
+.read-more-button:hover {
+    /* background-color: red; */
+    border: 0.2rem solid rgb(221, 172, 10);
+    border-radius: 2rem;
+    background-color: blanchedalmond;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.read-more-button a {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(54, 42, 3);
+    font-size: 15px;
+}
+
+.read-more-button a:hover {
+    color: rgb(54, 42, 3);
 }
