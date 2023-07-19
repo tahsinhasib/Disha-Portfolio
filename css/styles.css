@@ -48,7 +48,7 @@ html {
 
 .navbar-btns a {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: black;
 }
 
@@ -95,11 +95,18 @@ span {
     color: red;
 }
 
-i {
-    font-size: 2.5rem;
+.home-about-socials i {
+    font-size: 2rem;
     color: black;
-    border: 2px solid purple;
+    border: 2px solid black;
     border-radius: 50%;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.home-about-socials i:hover {
+    background-color: black;
+    color: white;
 }
 
 .home-right {
@@ -225,13 +232,21 @@ i {
 .services-type {
     padding: 1rem 1rem;
     border: 2px solid rgb(221, 172, 10);
+    max-height: 100%;
     border-radius: 1rem;
     box-shadow: 0 0.2rem 0.5rem rgb(104, 105, 105);
+    transition: transform 0.2s;
+}
+
+.services-type i {
+    font-size: 2.5rem;
+    color: black;
 }
 
 .services-type:hover {
     background-color: rgb(221, 172, 10);
     transition: 0.5s ease;
+    transform: scale(1.05);
 }
 
 .services-type h2 {
@@ -239,3 +254,38 @@ i {
     padding-bottom: 1rem;
 }
 
+
+.contact-container {
+    padding-top: 4rem;
+    display: flex;
+    background-color: rgb(221, 172, 10);
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 9rem;
+}
+
+.contact-heading {
+    margin-bottom: 1rem;
+}
+
+/* .input-box {
+    display: flex;
+    flex-direction: column;
+    width: 71%;
+} */
+
+form {
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 70%; */
+    gap: 0.5rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 70%;
+}
