@@ -26,6 +26,14 @@ html {
     padding-top: 1.5rem;
 }
 
+
+#menu-icon {
+    font-size: 1.5rem;
+    color: black;
+    display: none;
+}
+
+
 .navbar-options {
     display: flex;
     justify-content: center;
@@ -67,6 +75,7 @@ section {
     max-width: 60%;
     display: flex;
     justify-content: center;
+    flex: 1;
 }
 
 .home-about {
@@ -112,6 +121,7 @@ span {
 .home-right {
     max-width: 40%;
     background-color: rgb(224, 179, 29);
+    flex: 1;
 }
 
 .home-right img {
@@ -125,8 +135,8 @@ span {
     display: flex;
     justify-content: center;
     background-color: rgb(224, 179, 29);
-    /* padding-bottom: 5rem; */
-    /* padding-top: 2rem; */
+    padding-bottom: 3rem;
+    padding-top: 3rem;
 }
 
 .about-details {
@@ -256,7 +266,7 @@ span {
 
 
 .contact-container {
-    padding-top: 4rem;
+    padding-top: 5rem;
     display: flex;
     background-color: rgb(221, 172, 10);
     flex-direction: column;
@@ -265,7 +275,7 @@ span {
 }
 
 .contact-heading {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* .input-box {
@@ -275,7 +285,7 @@ span {
 } */
 
 form {
-    /* width: 50%; */
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -288,4 +298,147 @@ form {
     flex-direction: column;
     align-items: center;
     max-width: 70%;
+    gap: 0.7rem;
+}
+
+.feilds {
+    width: 18rem;
+    height: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.textfeild {
+    width: 18rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 7rem;
+    height: 2rem;
+    margin-top: 1rem;
+    background-color: rgb(221, 172, 10);
+    border-radius: 24px;
+    border-color: black;
+    box-shadow: 0 0.2rem 0.5rem rgb(104, 105, 105);
+    font-size: 0.8rem;
+    color: black;
+    /* letter-spacing: .1rem; */
+    font-weight: 700;
+}
+
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background: var(--main-color);
+}
+
+.footer-text p {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(221, 172, 10); */
+    border-radius: 50%;
+    border: .2rem solid transparent;
+    /* outline: .2rem solid transparent; */
+    transition: .5s ease;
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: #333;
+}
+
+
+
+/*Responsive Design*/
+
+@media (max-width: 950px) {
+
+
+    /* .home-container {
+        max-width: 50%;
+    } */
+
+    .home-about {
+        padding-top: 5rem;
+    }
+
+    .home-about p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 720px) {
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar-options {
+        position: fixed;
+        top: 80px;
+        line-height: 4rem;
+        left: 0;
+        /* background-color: rgb(221, 172, 10); */
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .navbar {
+
+    }
+
+
+    .home-container {
+        display: flex;
+    }
+
+
+    .home-left {
+        max-width: 100%;
+        width: 100%;
+        order: 1;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .home-right {
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+    }
 }

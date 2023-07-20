@@ -12,28 +12,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+
+    <!-- Boxicons Link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 <body>
 
 
 
 
-    <nav class="navbar">
+    <nav class="navbar" id="top">
         <div class="navbar-container">
             <!-- <h1 class="navbar-name"><a href="#">Disha</a></h1> -->
+            <div class="bx bx-menu" id="menu-icon"></div>
             <ul class="navbar-options">
                 <li class="navbar-btns"><a href="#home">Home</a></li>
                 <li class="navbar-btns" ><a href="#about">About</a></li>
                 <li class="navbar-btns"><a href="#services">Services</a></li>
-                <li class="navbar-btns"><a href="#">Contact</a></li>
+                <li class="navbar-btns"><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
 
     <!--Home-->
-    <section class="home-section">
+    <section class="home-section" id="home">
         <div class="home-container">
             <div class="home-left">
                 <div class="home-about">
@@ -116,24 +120,40 @@
     </section>
 
 
+
+
+
     <!--Contact-->
     <section class="contact-section" id="contact">
         <div class="contact-container">
             <h1 class="contact-heading">Contact <span>Me!</span></h1>
             <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input class="feilds" type="text" placeholder="Full Name">
+                <input class="feilds" type="email" placeholder="Email Address">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Subject">
+                <input class="feilds" type="number" placeholder="Mobile Number">
+                <input class="feilds" type="text" placeholder="Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea class="textfeild" name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
         </div>
     </section>
+
+
+
+    <!--Footer Design-->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>2023 Developed by Tahsin Hasib</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#top"><i class='bx bxs-caret-up-circle'></i></a>
+        </div>
+    </footer>
     
 
 </body>
