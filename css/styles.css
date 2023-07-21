@@ -386,22 +386,33 @@ form {
 
 /*Responsive Design*/
 
-/* @media (min-width: 950px) and (max-width: 1336px) {
+@media (max-width: 1024px) {
+
+    .about-details {
+        padding-top: 0;
+        margin-top: 4rem;
+        padding-bottom: 9rem;
+        width: 60%;
+    }
+
+    .services-container {
+        padding-top: 8rem;
+    }
     .services-grid {
         grid-template-columns: 1fr 1fr 1fr;
-        width: 80%;
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        gap: 2rem;
     }
-} */
+}
 
-@media (max-width: 950px) {
 
-    /* .home-container {
-        max-width: 50%;
-    } */
+@media (max-width: 768px) {
 
-    .checkbox {
+    /* .checkbox {
         display: none;
-    }
+    } */
 
     .home-about {
         padding-top: 5rem;
@@ -441,15 +452,6 @@ form {
     .footer-iconTop a i {
         font-size: 1.4rem;
     }
-}
-
-
-
-@media (max-width: 720px) {
-
-    /* .checkbox {
-        display: none;
-    } */
 
     #menu-icon {
         display: block;
@@ -502,14 +504,49 @@ form {
         width: 90%;
     }
 
-    /* .about-container {
-        margin-top: 45rem;
-    } */
+    .about-container {
+        margin-top: 44rem;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    .about-container {
+        margin-top: 4rem;
+    }
+
+    .about-details {
+        padding-top: 0;
+        margin-top: 4rem;
+        padding-bottom: 0;
+        width: 90%;
+    }
+
+    .about-details p {
+        font-size: 0.8rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .services-grid {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .services-type {
+        left: 0;
+        right: 0;
+        max-width: 100%;
+    }
+
 }
 
 
 
-@media (max-width: 365px) {
+@media (max-width: 375px) {
     #menu-icon {
         display: block;
     }
@@ -551,21 +588,32 @@ form {
         margin-top: 4rem;
     }
 
+
+
     .about-details {
-        max-width: 1%;
-        max-width: 90%;
+        padding-top: 0;
+        margin-top: 4rem;
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    .about-details p {
+        font-size: 0.8rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .services-grid {
-        padding-left: 0rem;
-        padding-right: 0rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         grid-template-columns: 1fr;
-        max-width: 80%;
+        width: 100%;
     }
 
     .services-type {
         left: 0;
-        max-width: 90%;
+        right: 0;
+        max-width: 100%;
     }
 }
 
@@ -599,8 +647,8 @@ form {
     }
 
     .services-grid {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
 
     }
 
